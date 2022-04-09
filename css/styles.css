@@ -12,11 +12,16 @@
   --primary-logo-color: black;
   --footer-logo-color: #ffffff;
   --section-background: #f5f4fa;
+  --footer-background: #2f303a;
+  --footer-link: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: "Roboto", Tahoma, sans-serif;
   color: var(--primary-text-color);
+  font-size: 14px;
+  letter-spacing: 0.03.em;
+  background-color: var(--background-color);
 }
 a {
   text-decoration: none;
@@ -24,6 +29,7 @@ a {
 .list {
   list-style: none;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -37,14 +43,12 @@ a {
   overflow: hidden;
 }
 /* Шапка страницы */
-.header {
-}
+
 .header-logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--primary-logo-color);
 }
 .header-logo-web {
@@ -52,7 +56,6 @@ a {
 }
 .header-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
@@ -61,11 +64,12 @@ a {
 .header-link:focus {
   color: var(--accent-color);
 }
-.header-adress {
+.header-link.current {
+  color: var(--accent-color);
 }
+
 .header-adress-list {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -108,38 +112,26 @@ a {
   background-color: var(--hero-btn-hover);
 }
 /* Особености компании */
-.features {
-}
-
-.features-list {
-}
 .features-item {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
 .features-text {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 /* Чем мы занимаемся */
-.works {
-}
+
 .works-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.works-img {
-}
+
 /* Наша команда */
 .team {
   background-color: var(--section-background);
@@ -149,35 +141,25 @@ a {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
-.team-list {
-}
-.team-item {
-  background-color: var(--background-color);
-}
-.team-img {
-}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .team-text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
 /* ----------------------------------------Портфолио------------------------------------------- */
-.portfolio-filter {
-}
+
 .portfolio-btn {
   cursor: pointer;
   font-family: "Roboto";
@@ -185,7 +167,6 @@ a {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   background-color: var(--section-background);
   color: var(--title-text-color);
 }
@@ -194,13 +175,7 @@ a {
   color: var(--btn-text-color);
   background-color: var(--accent-color);
 }
-.portfolio-content {
-}
 
-.portfolio-list {
-}
-.portfolio-img {
-}
 .portfolio-name {
   font-weight: 700;
   font-size: 18px;
@@ -212,41 +187,31 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 /* Футер */
 .footer {
-  background: #2f303a;
+  background: var(--footer-background);
 }
 .footer-logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--footer-logo-color);
 }
 .footer-logo-web {
   color: var(--accent-color);
 }
-.footer-address {
-}
-.footer-list {
-}
 .footer-list-address {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--p-text-color);
 }
 .footer-link {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-link);
 }
 .footer-link:hover,
 .footer-link:focus {
